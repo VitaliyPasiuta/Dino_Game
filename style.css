@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.game {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    border-bottom: 1px solid #000;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 110px;
+    
+}
+
+.jump{
+    animation: jump 0.5s linear;
+}
+
+#cactus{
+    width: 20px;
+    height: 40px;
+    background-image: url(./img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 160px;
+    left: 580px;
+}
+
+#score {
+    width: 100px;
+    font-family: Alfa Slab One;
+    font-size: 30px;
+    position: relative;
+    left: 510px;
+    top: -20px;
+}
+
+@keyframes cactusMove {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes jump {
+    0%{
+        top: 110px;
+    }
+    30%{
+        top:65px;
+        background-image: url(./img/dino2.png);
+    }
+    50%{
+        top:55px;
+        background-image: url(./img/dino2.png);
+    }
+    80%{
+        top: 75px;
+        background-image: url(./img/dino2.png);
+    }
+    100%{
+        top: 110px;
+    }
+}
